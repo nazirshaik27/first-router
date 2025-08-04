@@ -13,7 +13,7 @@ export class ComponentDidMount extends Component {
     console.log("Render Method")
     return (
       <>
-        <h2>Component did mount | life cycle method</h2>
+        <h2>Component did mount | life cycle method to work</h2>
       </>
     )
   }
