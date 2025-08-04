@@ -11,6 +11,7 @@ import { GetApiData } from './api/GetApiData'
 import ReactHooks from './react-hooks/ReactHooks'
 import Login from './pages/Login'
 import Service from './pages/Service'
+import Stopwatch from './react-hooks/Stopwatch'
 
 function App() {
 
@@ -48,6 +49,10 @@ function App() {
       {
         path:'/service',
         element:<Service />,
+      },
+      {
+        path:'/stopwatch',
+        element:<Stopwatch />,
       },
      ]
     },

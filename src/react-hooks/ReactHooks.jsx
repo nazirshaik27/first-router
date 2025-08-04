@@ -5,6 +5,7 @@ import UseEffect from './UseEffect';
 import UseRef from './UseRef';
 import TodoApp from './TodoApp';
 import TodoAppNew from './TodoAppNew'
+import UseReducer2 from './UseReducer2';
 
 const ReactHooks = () => {
     const [activeTab, setActiveTab] = useState('Tab1');
@@ -30,6 +31,14 @@ const ReactHooks = () => {
           onClick={() => handleTabClick('Tab2')}
         >
           UseReducer
+        </button>
+        <button
+          className={`py-2 px-4 text-2xl ${
+            activeTab === 'Tab7' ? 'border-b-4 border-blue-500 text-blue-500 text-2xl' : 'text-gray-500'
+          }`}
+          onClick={() => handleTabClick('Tab7')}
+        >
+          UseReducer2
         </button>
         <button
           className={`py-2 px-4 text-2xl ${
@@ -70,6 +79,7 @@ const ReactHooks = () => {
              <UseState />
             </div>}
         {activeTab === 'Tab2' && <div><UseReducer /></div>}
+        {activeTab === 'Tab7' && <div><UseReducer2 /></div>}
         {activeTab === 'Tab3' && <div>
            <UseEffect />
           </div>}

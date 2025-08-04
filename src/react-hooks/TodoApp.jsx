@@ -26,11 +26,12 @@ function TodoApp() {
 
     const saveEditTask = () => {
         setTodos(todos.map(todo => 
-            todo.id === editTaskId ? {...todo, name: editTaskName} : todo
+            todo.id === editTaskId ? {...todo, name: taskName} : todo
         ));
         setEditTaskId(null)
         setEditTaskName('');
     }
+    
   return (
     <>
     <div className="flex flex-col items-center bg-gray-100 p-8">

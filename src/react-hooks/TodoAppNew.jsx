@@ -52,7 +52,7 @@ function TodoAppNew() {
       <h1 className="text-3xl font-bold mb-4">Todo List with Contact Details</h1>
       <input 
        type='text'
-       placeholder='Name'
+       placeholder='user name'
        value={name}
        onChange={(e) => setName(e.target.value)}
        className="border rounded-lg px-4 py-2 w-64 mr-2"
